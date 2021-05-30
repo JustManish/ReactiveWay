@@ -26,6 +26,7 @@
 		0491611826615B70000A0549 /* ButtonsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491610F26615B70000A0549 /* ButtonsExtension.swift */; };
 		0491611E266161CA000A0549 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491611D266161CA000A0549 /* ToDoViewModel.swift */; };
 		04916121266161FB000A0549 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04916120266161FB000A0549 /* ToDo.swift */; };
+		E37B7CE301D18D30B93F7D8C /* Pods_ReactiveWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19AF8B5EC675B4677771511 /* Pods_ReactiveWay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,9 @@
 		0491610F26615B70000A0549 /* ButtonsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsExtension.swift; sourceTree = "<group>"; };
 		0491611D266161CA000A0549 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 		04916120266161FB000A0549 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		68CAB04F1449B173367AAFDE /* Pods-ReactiveWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveWay.debug.xcconfig"; path = "Target Support Files/Pods-ReactiveWay/Pods-ReactiveWay.debug.xcconfig"; sourceTree = "<group>"; };
+		D19AF8B5EC675B4677771511 /* Pods_ReactiveWay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveWay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63B25DD1E18F592A1AED3BD /* Pods-ReactiveWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveWay.release.xcconfig"; path = "Target Support Files/Pods-ReactiveWay/Pods-ReactiveWay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37B7CE301D18D30B93F7D8C /* Pods_ReactiveWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,8 @@
 			children = (
 				045D6AC1265F7285002741DB /* ReactiveWay */,
 				045D6AC0265F7285002741DB /* Products */,
+				A4F74A03A01E1C8EDA8CF5DA /* Pods */,
+				BBCF21D422BBA1DEC50D1D19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +153,24 @@
 			path = ToDo;
 			sourceTree = "<group>";
 		};
+		A4F74A03A01E1C8EDA8CF5DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68CAB04F1449B173367AAFDE /* Pods-ReactiveWay.debug.xcconfig */,
+				E63B25DD1E18F592A1AED3BD /* Pods-ReactiveWay.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BBCF21D422BBA1DEC50D1D19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D19AF8B5EC675B4677771511 /* Pods_ReactiveWay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045D6AD3265F7288002741DB /* Build configuration list for PBXNativeTarget "ReactiveWay" */;
 			buildPhases = (
+				60DDB19FE17733992311BF2E /* [CP] Check Pods Manifest.lock */,
 				045D6ABB265F7285002741DB /* Sources */,
 				045D6ABC265F7285002741DB /* Frameworks */,
 				045D6ABD265F7285002741DB /* Resources */,
+				4146A6D14C17A414ED7AA10D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +237,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4146A6D14C17A414ED7AA10D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveWay/Pods-ReactiveWay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveWay/Pods-ReactiveWay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactiveWay/Pods-ReactiveWay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60DDB19FE17733992311BF2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveWay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		045D6ABB265F7285002741DB /* Sources */ = {
@@ -375,6 +444,7 @@
 		};
 		045D6AD4265F7288002741DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68CAB04F1449B173367AAFDE /* Pods-ReactiveWay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,6 +464,7 @@
 		};
 		045D6AD5265F7288002741DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E63B25DD1E18F592A1AED3BD /* Pods-ReactiveWay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

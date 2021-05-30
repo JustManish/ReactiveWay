@@ -7,7 +7,6 @@
 
 import Foundation
 
-//formatted into Rx
 
 protocol ToDoItemPresentable {
       
